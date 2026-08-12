@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.classList.add('dark-mode');
+    }
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Era</title>
+  <link rel="icon" type="image/png" href="/icons/512-modified.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/assets/support-CGDIDdCS.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/background-D5PgMuB-.js">
+  <link rel="stylesheet" crossorigin href="/assets/background--j7vX-CI.css">
+</head>
+<body>
+  <!-- Floating 3D Background Scene -->
+  <div class="floating-scene" id="floating-scene" aria-hidden="true">
+    <div class="floating-scene__orbit">
+      <div class="floating-scene__shape floating-scene__cube"></div>
+      <div class="floating-scene__shape floating-scene__ring"></div>
+      <div class="floating-scene__shape floating-scene__sphere"></div>
+      <div class="floating-scene__shape floating-scene__pyramid"></div>
+      <div class="floating-scene__shape floating-scene__cube2"></div>
+      <div class="floating-scene__shape floating-scene__sphere2"></div>
+      <div class="floating-scene__shape floating-scene__cone"></div>
+      <div class="floating-scene__shape floating-scene__cylinder"></div>
+      <!-- Additional 3D shapes -->
+      <div class="floating-scene__shape floating-scene__torus"></div>
+      <div class="floating-scene__shape floating-scene__capsule"></div>
+      <div class="floating-scene__shape floating-scene__sphere3"></div>
+      <div class="floating-scene__shape floating-scene__cube3"></div>
+    </div>
+    <div class="floating-scene__glow floating-scene__glow1"></div>
+    <div class="floating-scene__glow floating-scene__glow2"></div>
+    <div class="floating-scene__glow floating-scene__glow3"></div>
+    <div class="floating-scene__grid"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar__container container">
+      <a href="/" class="navbar__logo">
+        <img src="/icons/512-modified.png" alt="Campus Era Logo" width="28" height="28" class="navbar__logo-img">
+        Campus<span>Era</span>
+      </a>
+      <div class="navbar__links">
+        <a href="/">Home</a>
+        <a href="/support.html">Support</a>
+        <a href="/privacy.html">Privacy</a>
+      </div>
+      <div class="navbar__actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>
+        </button>
+        <a href="https://play.google.com/store/apps/details?id=com.company.campusera" target="_blank" rel="noopener" class="navbar__cta" data-magnetic>Download App</a>
+      </div>
+      <button class="navbar__hamburger" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="navbar__mobile-menu">
+      <a href="/#features">Features</a>
+      <a href="/#how-it-works">How it Works</a>
+      <a href="/#screenshots">Screenshots</a>
+      <a href="/support.html">Support</a>
+      <a href="https://play.google.com/store/apps/details?id=com.company.campusera" target="_blank" rel="noopener" class="navbar__cta">Download App</a>
+    </div>
+  </nav>
+
+  <section class="support-hero">
+    <div class="container">
+      <h1>How can we help?</h1>
+      <p class="updated">Find answers or reach out to our team.</p>
+    </div>
+  </section>
+
+  <main class="support-content">
+    <div class="support-intro">
+      <p>Welcome to Campus Era Support. If you're having trouble with the app, need help resetting your password, or just want to suggest a new feature, you're in the right place.</p>
+    </div>
+
+    <div class="support-faq" id="faq">
+      <h2>Frequently Asked Questions</h2>
+
+      <details class="support-card">
+        <summary>Who can use Campus Era?</summary>
+        <div class="privacy-card__content">
+          <p>Campus Era is designed for college and university students. Students can create an account, complete their profile, connect with other students, discover useful campus resources, and participate in the Campus Era community.</p>
+        </div>
+      </details>
+
+      <details class="support-card">
+        <summary>How do I create an account?</summary>
+        <div class="privacy-card__content">
+          <p>You can create an account using Continue with Google or by registering with your email address and password. If you register using email and password, you will need to verify your email address through the verification email sent to your inbox.</p>
+        </div>
+      </details>
+
+      <details class="support-card">
+        <summary>What information do I need to provide?</summary>
+        <div class="privacy-card__content">
+          <p>You can add information such as your name, username, profile photo, university or college, course, branch, academic year, bio, and phone number. Some information may be optional, and certain details may remain private depending on how they are used in the app.</p>
+        </div>
+      </details>
+
+      <details class="support-card">
+        <summary>Can I connect and chat with other students?</summary>
+        <div class="privacy-card__content">
+          <p>Yes. You can send a connection request to another user. Private messaging becomes available after the connection request is accepted, helping reduce unwanted messages.</p>
+        </div>
+      </details>
+
+      <details class="support-card">
+        <summary>How can I find PGs and Mess services?</summary>
+        <div class="privacy-card__content">
+          <p>You can explore available PG accommodations and Mess services listed on Campus Era. Listings may include useful information such as location and other relevant details to help students discover suitable options.</p>
+        </div>
+      </details>
+
+      <details class="support-card">
+        <summary>Does Campus Era track my live location?</summary>
+        <div class="privacy-card__content">
+          <p>Campus Era does not continuously track your live location. For location-based listings such as PGs or Mess services, the app may use saved location coordinates and open a maps application so that you can view the location or get directions.</p>
+        </div>
+      </details>
+
+      <details class="support-card">
+        <summary>Can I post content on Campus Era?</summary>
+        <div class="privacy-card__content">
+          <p>Yes. Users can create posts and share images with the Campus Era community. Users are expected to follow the platform's community guidelines and avoid posting abusive, illegal, misleading, or privacy-invasive content.</p>
+        </div>
+      </details>
+
+      <details class="support-card">
+        <summary>Is buying and selling through Campus Market safe?</summary>
+        <div class="privacy-card__content">
+          <p>Campus Market helps students discover items listed by other users. Campus Era does not guarantee, inspect, or take responsibility for individual transactions between users. Always verify the item before making payment and meet in a safe public place for in-person exchanges.</p>
+        </div>
+      </details>
+
+      <details class="support-card">
+        <summary>Does Campus Era handle payments between buyers and sellers?</summary>
+        <div class="privacy-card__content">
+          <p>No. Campus Era currently acts as a platform for users to discover listings and connect with each other. Payments and exchanges are arranged directly between the users involved. Users should independently verify the item, seller, and transaction details before making any payment.</p>
+        </div>
+      </details>
+
+      <details class="support-card">
+        <summary>Can I report inappropriate content or users?</summary>
+        <div class="privacy-card__content">
+          <p>If you encounter inappropriate content, harassment, spam, scams, or other misuse of the platform, you can report the relevant content or user through the available reporting options. Reports may be reviewed and appropriate action may be taken when necessary.</p>
+        </div>
+      </details>
+
+      <div id="more-faqs" style="display: none;">
+        <details class="support-card">
+          <summary>Can I delete my Campus Era account?</summary>
+          <div class="privacy-card__content">
+            <p>Yes. You can request deletion of your Campus Era account and associated personal data by contacting the official Campus Era support email. You may be asked to verify account ownership before the deletion request is processed.</p>
+          </div>
+        </details>
+
+        <details class="support-card">
+          <summary>What happens if I forget my password?</summary>
+          <div class="privacy-card__content">
+            <p>If you created your account using email and password, you can use the password reset option to receive password recovery instructions at your registered email address. Users who signed in with Google should continue using their Google account to access Campus Era.</p>
+          </div>
+        </details>
+
+        <details class="support-card">
+          <summary>Who can see my phone number and personal details?</summary>
+          <div class="privacy-card__content">
+            <p>Your phone number and other private profile information are not intended to be publicly displayed to other users unless a feature explicitly allows you to share them. Public profile information and content you choose to post may be visible to other Campus Era users.</p>
+          </div>
+        </details>
+
+        <details class="support-card">
+          <summary>Is Campus Era free to use?</summary>
+          <div class="privacy-card__content">
+            <p>Yes, Campus Era is currently free to use. If paid features or services are introduced in the future, relevant pricing and terms will be clearly communicated before users make a purchase.</p>
+          </div>
+        </details>
+
+        <details class="support-card">
+          <summary>How can I contact Campus Era?</summary>
+          <div class="privacy-card__content">
+            <p>For account assistance, privacy requests, deletion requests, reports, or other support issues, you can contact Campus Era through the official support email or the contact options available on the official Campus Era website.</p>
+          </div>
+        </details>
+      </div>
+      
+      <div style="text-align: center; margin-top: 24px;">
+        <button id="view-more-faqs-btn" style="background: none; border: none; color: var(--color-primary); font-family: var(--font-body); font-weight: 600; font-size: 16px; cursor: pointer; text-decoration: underline;">View More FAQs</button>
+      </div>
+
+    </div>
+
+    <div class="support-contact">
+      <h2>Still need help?</h2>
+      <p>Can't find the answer you're looking for?</p>
+      <p>Reach out to our student support team and we'll get back to you within 24 hours.</p>
+      <a href="mailto:campus.era.tech@gmail.com" class="support-contact__email">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        campus.era.tech@gmail.com
+      </a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__bottom">
+        <p>&copy; 2024 Campus Era. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

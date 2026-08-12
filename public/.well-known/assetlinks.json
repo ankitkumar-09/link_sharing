@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.company.campusera",
+      "sha256_cert_fingerprints": [
+        "8E:B0:9B:AF:9F:12:15:C2:A1:E8:92:2E:BA:50:C2:49:63:08:BE:B0:EC:F8:10:66:69:12:8E:78:74:FD:07:1C"
+      ]
+    }
+  }
+]

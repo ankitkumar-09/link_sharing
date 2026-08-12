@@ -1,0 +1,15 @@
+import "node:module";
+import { resolve } from "path";
+import { defineConfig } from "vite";
+//#endregion
+//#region vite.config.js
+const __vite_injected_original_dirname = "/sessions/eager-cool-bohr/mnt/CampusEra-sharing";
+var vite_config_default = defineConfig({ build: { rollupOptions: { input: {
+	main: resolve(__vite_injected_original_dirname, "index.html"),
+	privacy: resolve(__vite_injected_original_dirname, "privacy.html"),
+	support: resolve(__vite_injected_original_dirname, "support.html")
+} } } });
+//#endregion
+export { vite_config_default as default };
+
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidml0ZS5jb25maWcuanMiLCJuYW1lcyI6W10sInNvdXJjZXMiOlsiL3Nlc3Npb25zL2VhZ2VyLWNvb2wtYm9oci9tbnQvQ2FtcHVzRXJhLXNoYXJpbmcvdml0ZS5jb25maWcuanMiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgcmVzb2x2ZSB9IGZyb20gJ3BhdGgnO1xuaW1wb3J0IHsgZGVmaW5lQ29uZmlnIH0gZnJvbSAndml0ZSc7XG5cbmV4cG9ydCBkZWZhdWx0IGRlZmluZUNvbmZpZyh7XG4gIGJ1aWxkOiB7XG4gICAgcm9sbHVwT3B0aW9uczoge1xuICAgICAgaW5wdXQ6IHtcbiAgICAgICAgbWFpbjogcmVzb2x2ZShfX2Rpcm5hbWUsICdpbmRleC5odG1sJyksXG4gICAgICAgIHByaXZhY3k6IHJlc29sdmUoX19kaXJuYW1lLCAncHJpdmFjeS5odG1sJyksXG4gICAgICAgIHN1cHBvcnQ6IHJlc29sdmUoX19kaXJuYW1lLCAnc3VwcG9ydC5odG1sJylcbiAgICAgIH1cbiAgICB9XG4gIH1cbn0pO1xuIl0sIm1hcHBpbmdzIjoiOzs7OztBQUFBLE1BQU0sbUNBQW1DO0FBR3pDLElBQUEsc0JBQWUsYUFBYSxFQUMxQixPQUFPLEVBQ0wsZUFBZSxFQUNiLE9BQU87Q0FDTCxNQUFNLFFBQUEsa0NBQW1CLFlBQVk7Q0FDckMsU0FBUyxRQUFBLGtDQUFtQixjQUFjO0NBQzFDLFNBQVMsUUFBQSxrQ0FBbUIsY0FBYztBQUM1QyxFQUNGLEVBQ0YsRUFDRixDQUFDIn0=

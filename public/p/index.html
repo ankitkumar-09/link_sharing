@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CampusEra — Open post</title>
+  <meta property="og:title" content="CampusEra" />
+  <meta property="og:description" content="Open this post in the CampusEra app." />
+  <style>
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+      background:linear-gradient(160deg,#eef2ff 0%,#f8fafc 60%); color:#0f172a; min-height:100vh;
+      display:flex; align-items:center; justify-content:center; padding:24px; }
+    .card { background:#fff; border-radius:24px; box-shadow:0 20px 60px rgba(15,23,42,0.10); max-width:420px; width:100%;
+      padding:36px 28px; text-align:center; }
+    .logo { width:76px; height:76px; border-radius:20px; object-fit:contain; background:#fff;
+      box-shadow:0 6px 20px rgba(59,130,246,0.25); margin:0 auto 18px; display:block; }
+    h1 { font-size:22px; margin:0 0 6px; font-weight:800; }
+    p { color:#64748b; font-size:14.5px; line-height:1.6; margin:0 0 22px; }
+    .btn { display:block; width:100%; text-decoration:none; font-weight:700; font-size:15px; padding:14px 20px;
+      border-radius:14px; margin-bottom:12px; }
+    .btn-primary { background:linear-gradient(135deg,#3B82F6,#6D66D6); color:#fff; box-shadow:0 8px 20px rgba(59,130,246,0.35); }
+    .btn-store { background:#0f172a; color:#fff; }
+    .muted { font-size:12px; color:#94a3b8; margin-top:10px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img class="logo" src="https://i.postimg.cc/xCvhWt4Z/logo.png" alt="CampusEra" />
+    <h1>Open this post in CampusEra</h1>
+    <p>This link opens a post in the CampusEra app. Get the app to view it, like, and join the conversation.</p>
+
+    <a class="btn btn-primary" id="openApp" href="#">Open in app</a>
+    <a class="btn btn-store" id="playStore"
+       href="https://play.google.com/store/apps/details?id=com.company.campusera&pcampaignid=web_share">
+       Get it on Google Play
+    </a>
+    <div class="muted">Already have the app? It should open automatically.</div>
+  </div>
+
+  <script>
+    (function () {
+      var PKG = 'com.company.campusera';
+      var PLAY = 'https://play.google.com/store/apps/details?id=' + PKG + '&pcampaignid=web_share';
+      var parts = location.pathname.split('/').filter(Boolean);
+      var postId = parts[parts.length - 1] || '';
+
+      var intentUrl = 'intent://campusera.in/p/' + encodeURIComponent(postId) +
+        '#Intent;scheme=https;package=' + PKG +
+        ';S.browser_fallback_url=' + encodeURIComponent(PLAY) + ';end';
+
+      document.getElementById('openApp').setAttribute('href', intentUrl);
+      document.getElementById('playStore').setAttribute('href', PLAY);
+
+      var isAndroid = /android/i.test(navigator.userAgent);
+      if (isAndroid && postId) {
+        setTimeout(function () { window.location.href = intentUrl; }, 400);
+      }
+    })();
+  </script>
+</body>
+</html>

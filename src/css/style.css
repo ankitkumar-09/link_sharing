@@ -2458,12 +2458,33 @@ html.dark-mode .legal-doc__content a, html.dark-mode .highlight-link {
 .promo {
   padding: 120px 0;
   position: relative;
+  overflow: hidden;
+}
+
+/* Soft on-brand ambient glow behind the video so it doesn't float on empty space */
+.promo::before {
+  content: "";
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  width: min(1150px, 92%);
+  height: 560px;
+  transform: translate(-50%, -50%);
+  background:
+    radial-gradient(circle at 26% 36%, color-mix(in srgb, var(--color-primary) 30%, transparent), transparent 58%),
+    radial-gradient(circle at 80% 66%, color-mix(in srgb, var(--color-tertiary) 26%, transparent), transparent 60%),
+    radial-gradient(circle at 60% 22%, color-mix(in srgb, var(--color-secondary) 22%, transparent), transparent 55%);
+  filter: blur(80px);
+  z-index: 0;
+  pointer-events: none;
 }
 
 .promo__header {
   text-align: center;
   margin-bottom: 56px;
   padding: 0 24px;
+  position: relative;
+  z-index: 1;
 }
 
 .promo__eyebrow {
@@ -2485,6 +2506,8 @@ html.dark-mode .legal-doc__content a, html.dark-mode .highlight-link {
 
 .promo__container {
   max-width: 900px;
+  position: relative;
+  z-index: 1;
 }
 
 .promo__player {

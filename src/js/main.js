@@ -11,6 +11,7 @@ import { initFeatures } from './animations/features.js';
 import { initSteps } from './animations/steps.js';
 import { initUniversities } from './animations/universities.js';
 import { initCarousel } from './animations/carousel.js';
+import { initPromoVideo } from './animations/promoVideo.js';
 import { initCTA } from './animations/cta.js';
 import { initThemeCycle } from './animations/themeCycle.js';
 import { initDarkMode } from './animations/darkMode.js';
@@ -105,6 +106,7 @@ window.addEventListener('load', () => {
   initSteps();
   initUniversities();
   initCarousel();
+  initPromoVideo();
   initCTA();
   initThemeCycle();
   initDarkMode();
